@@ -72,6 +72,83 @@ aside {
     padding: 50px 0;
 }
 
+/* START IT Security page */
+.tac{text-align: center}
+.linkedin-campaign-content-wrapper{
+	padding-top: 100px;
+}
+
+.subscribe-bar {
+    background: #7bb703;
+    padding: 15px;
+    margin-bottom: 40px;
+    color: #fff;
+    font-size: 18px;
+    text-shadow: 0 0;
+    font-weight: 500;
+    box-shadow: 0 0 10px #2ecc71;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.subscribe-bar a{
+	text-decoration: underline;
+}
+
+.card-box {
+    height: 250px;
+    padding: 50px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    box-shadow: 0 0 5px #ddd;
+    margin: 20px auto;
+    width: 250px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.honey-flower{background: #674172;}
+.san-marino{background: #446CB3;}
+.ming{background: #336E7B;}
+.eucalyptus{background: #26A65B;}
+.crusta{background: #F2784B;}
+
+.card-box .table {
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.card-box .table tr td{
+	text-align: center;
+	vertical-align: middle;
+	border: 0;
+}
+
+.linkedin-campaign-footer{
+	background: #34495e;
+	color: #fff;
+	padding: 15px;
+	margin-top: 20px;
+	text-align: center;
+}
+
+.linkedin-campaign-services-row{
+    background: #eee;
+    padding: 10px;
+}
+
+.f-row{
+	border-radius: 10px 10px 0 0;
+}
+
+.l-row{
+	border-radius: 0 0 10px 10px;
+}
+
+/* END IT Security page */
+
 .no-padding {
     padding: 0;
 }
@@ -126,9 +203,8 @@ aside {
 .navbar-nav>li.active{
 	border-bottom:solid 4px #d31a1a;
 }
-@media(min-width:768px) {
-   
-}
+
+
 
 header {
     position: relative;
@@ -486,6 +562,7 @@ fieldset[disabled] .btn-primary.active {
 
 .btn {
     border: 0;
+    
     border-radius: 300px;
     text-transform: uppercase;
     font-family: 'Segoe UI','Helvetica Neue',Arial,sans-serif;
@@ -822,10 +899,6 @@ body {
     border-radius: 3px;
 }
 
-.connect-block{
-	
-}
-
 .facebook{
 	background: #3b579d;
 }
@@ -1095,3 +1168,13 @@ font-size:12px;
 * html .clearfix { height: 1%; }
 .clearfix { display: block; }
 /* close commented backslash hack */
+
+
+
+
+
+
+
+
+
+
