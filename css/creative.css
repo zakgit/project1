@@ -10,8 +10,87 @@ body {
     height: 100%;
 }
 
+/* LATO FONTS */
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/lato/lato-black-webfont.eot');
+  src: url('../fonts/lato/lato-black-webfont.eot?#iefix')
+    format('embedded-opentype'),
+    url('../fonts/lato/lato-black-webfont.woff') format('woff'),
+    url('../fonts/lato/lato-black-webfont.ttf') format('truetype'),
+    url('../fonts/lato/lato-black-webfont.svg#latoblack') format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/lato/lato-bold-webfont.eot');
+  src: url('../fonts/lato/lato-bold-webfont.eot?#iefix')
+    format('embedded-opentype'),
+    url('../fonts/lato/lato-bold-webfont.woff') format('woff'),
+    url('../fonts/lato/lato-bold-webfont.ttf') format('truetype'),
+    url('../fonts/lato/lato-bold-webfont.svg#latobold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/lato/lato-bolditalic-webfont.eot');
+  src: url('../fonts/lato/lato-bolditalic-webfont.eot?#iefix')
+    format('embedded-opentype'),
+    url('../fonts/lato/lato-bolditalic-webfont.woff') format('woff'),
+    url('../fonts/lato/lato-bolditalic-webfont.ttf') format('truetype'),
+    url('../fonts/lato/lato-bolditalic-webfont.svg#latobold_italic')
+    format('svg');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/lato/lato-italic-webfont.eot');
+  src: url('../fonts/lato/lato-italic-webfont.eot?#iefix')
+    format('embedded-opentype'),
+    url('../fonts/lato/lato-italic-webfont.woff') format('woff'),
+    url('../fonts/lato/lato-italic-webfont.ttf') format('truetype'),
+    url('../fonts/lato/lato-italic-webfont.svg#latoitalic') format('svg');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/lato/lato-light-webfont.eot');
+  src: url('../fonts/lato/lato-light-webfont.eot?#iefix')
+    format('embedded-opentype'),
+    url('../fonts/lato/lato-light-webfont.woff') format('woff'),
+    url('../fonts/lato/lato-light-webfont.ttf') format('truetype'),
+    url('../fonts/lato/lato-light-webfont.svg#latolight') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/lato/lato-regular-webfont.eot');
+  src: url('../fonts/lato/lato-regular-webfont.eot?#iefix')
+    format('embedded-opentype'),
+    url('../fonts/lato/lato-regular-webfont.woff') format('woff'),
+    url('../fonts/lato/lato-regular-webfont.ttf') format('truetype'),
+    url('../fonts/lato/lato-regular-webfont.svg#latoregular')
+    format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-    font-family: 'Segoe UI';
+    background-color: #fff;
+    font-family: Lato, Arial, Sans;
+    font-size: 14px;
+    line-height: 1.4555;
 }
 
 hr {
@@ -42,7 +121,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Segoe UI';
+    font-family: Lato, Arial, Sans;;
 }
 
 p {
@@ -155,16 +234,22 @@ aside {
 
 .navbar-default {
     border-color: rgba(34,34,34,.05);
-    font-family: 'Segoe UI';
+    font-family: Lato, Arial, Sans;;
     background-color: #fff;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
 }
 
+.navbar-default.navbar-fixed-top{
+	min-height: 50px;
+    box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+    border: 0;
+}
+
 .navbar-default .navbar-header .navbar-brand {
-    
-    font-family: 'Segoe UI';	
+    padding: 0 15px;
+    font-family: Lato, Arial, Sans;	
     font-weight: 700;
     color: #f05f40;
 }
@@ -198,7 +283,7 @@ aside {
 }
 .navbar-nav li a
 {
-	padding:40px 15px ;
+	padding:15px;
 }
 .navbar-nav>li.active{
 	border-bottom:solid 4px #d31a1a;
@@ -254,7 +339,7 @@ header .header-content .header-content-inner p {
 		height: 640px;
 		background-size: 100% 100%;
 		width: 100%;
-	    margin: 105px 0 0;
+	    margin: 50px 0 0;
     }
 
     header .header-content {
@@ -297,18 +382,33 @@ header .header-content .header-content-inner p {
     margin: 50px auto 0;
     max-width: 400px;
 }
-.service-box {
-	text-transform:uppercase;
+.service-box i{
+    font-size: 40px;
+    text-align: center;
+    vertical-align: middle;
+    color: #e74c3c;
 }
+
+.service-box h3{
+}
+
+.service-box table tr td{
+	vertical-align: middle;
+	padding: 0px 5px;
+}
+
 .service-icon{
 	background:url(../images/services-sprite.png);
 	display:block;
+	float: left;
+    margin-right: 15px;
 }
 .service-box h3
 {
 	width:265px;
 	font-size:20px;
-	height: 44px;
+	margin:0;
+	height: auto;
 }
 .custom-app {
 width: 44px;
@@ -385,7 +485,7 @@ height: 50px;
  }
 .service-box p {
     margin-bottom: 0;
-	font-size:16px;
+	font-size:14px;
 	text-transform:none;
 }
 
@@ -422,7 +522,7 @@ height: 50px;
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
     padding: 0 15px;
-    font-family: 'Segoe UI','Helvetica Neue',Arial,sans-serif;
+    font-family: Lato, Arial, Sans;
 }
 
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
@@ -565,7 +665,7 @@ fieldset[disabled] .btn-primary.active {
     
     border-radius: 300px;
     text-transform: uppercase;
-    font-family: 'Segoe UI','Helvetica Neue',Arial,sans-serif;
+    font-family: Lato, Arial, Sans;
     font-weight: 700;
 }
 
@@ -650,7 +750,7 @@ body {
 }
 #application
 {
-	padding:55px 0 0;
+	padding:0 0 0;
 	color:#ffffff;
 }
 #application h3
@@ -669,19 +769,36 @@ body {
 }
 
 .color-box-content {
-    padding: 145px 100px 100px 100px;
+    padding: 95px 100px 100px 100px;
     height: 400px;
+}
+
+.intro-services-img{
+    height: 50px;
 }
 
 .orange-bg{
 	background: #fcb63e;
 }
+
+.red-bg{
+	background: #E96656;
+}
+
+.yellow-bg{
+	background: #F7D861;
+}
+
 .cyan-bg{
 	background: #00a79d;
 }
 
+.inor-green-bg {
+    background: #98c73a;
+}
+
 .blue-bg{
-	background: #25aae1;
+	background: #3AB0E2;
 }
 
 .purple-bg{
@@ -1013,8 +1130,13 @@ body {
 }
 #services,#about,#product
 {
-	padding:55px 0;
+	padding:0;
 }
+
+#services, #about, #stay-connected{
+	padding-bottom: 0;
+}
+
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
 	border-color: #e7e7e7;
 	margin-top: 0;
@@ -1078,7 +1200,8 @@ body {
     }
 	.navbar-header
 	{
-		height:100px;
+        height: 50px;
+        box-shadow: 0 0 10px #999;
 	}
 	.navbar-nav li a {
 		padding:10px;
@@ -1169,12 +1292,26 @@ font-size:12px;
 .clearfix { display: block; }
 /* close commented backslash hack */
 
+@media (max-width: 768px) {
+	header {
+		display: none;
+	}
 
+	.color-box-content {
+	    padding: 100px 50px 50px 50px;
+	    height: 400px;
+	}
 
+	#application {
+	    padding: 70px 0 0;
+	    color: #ffffff;
+	}
 
+	#application h3 {
+    	font-size: 20px;
+    }
 
-
-
-
-
-
+    #application p{
+    	font-size: 16px;
+    }
+}
